@@ -1,0 +1,19 @@
+.header{
+    display: none;
+    padding: 10px;
+    border-bottom:1px solid var(--incoming-chat-border);
+  }
+  
+  .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-content h4{
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  .header-content .mode i{
+    font-size: 1.4rem;
+    cursor: pointer;
+  }

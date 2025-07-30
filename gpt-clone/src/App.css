@@ -1,0 +1,70 @@
+.App {
+  /* margin-top: 3rem; */
+  background-color: var(--outgoing-chat-bg);
+  transition: 0.5s;
+}
+.chat-gpt {
+  /* max-width: 1300px; */
+  margin-inline: auto;
+  height: 90dvh;
+  position: relative;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: block;
+  }
+
+  .top {
+    grid-template-columns: 1fr;
+  }
+  .top-left {
+    display: none;
+  }
+
+  .text-blank-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .text-blank-view h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  .text-blank-view p {
+    font-size: 1rem;
+  }
+
+  .top-right {
+    height: auto;
+  }
+
+  .top-right .text .bot {
+    padding: 15px;
+  }
+  .top-right .text .bot p {
+    width: 70%;
+  }
+  .top-right .text .user {
+    padding: 15px;
+  }
+
+  .top-right .text .bot .copy {
+    width: auto;
+  }
+
+  .bottom .bottom-content {
+    grid-template-columns: 1fr 60px;
+  }
+  .bottom-content .mode {
+    display: none;
+  }
+}

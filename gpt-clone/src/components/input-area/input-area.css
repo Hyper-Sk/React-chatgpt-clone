@@ -1,0 +1,86 @@
+/* text-area input area  */
+
+.text-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid var(--incoming-chat-border);
+  background-color: var(--outgoing-chat-bg);
+  padding: 20px;
+  height: 100px;
+}
+
+.text-area .text-area-content {
+  max-width: 1300px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 60px 60px;
+  gap: 10px;
+}
+.text-area-content .text-field {
+  background-color: var(--incoming-chat-bg);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+  border-radius: 7px;
+  position: relative;
+}
+.text-area-content .text-field input {
+  background-color: var(--incoming-chat-bg);
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.text-area-content .text-field button {
+  border: none;
+  background-color: var(--text-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+.text-area-content .text-field button i {
+  font-size: 1.3rem;
+  border-radius: 50%;
+  color: var(--outgoing-chat-bg);
+}
+
+.text-area-content .mode {
+  background-color: var(--incoming-chat-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.text-area-content .mode i {
+  font-size: 1.5rem;
+}
+
+.text-area-content .delete {
+  background-color: var(--incoming-chat-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.text-area-content .delete i {
+  font-size: 1.5rem;
+}

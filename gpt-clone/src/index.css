@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+/* Default Color */
+
+:root {
+ 
+  --text-color: #343541;
+  --icon-color: #a9a9c;
+  --icon-hover-bg: #f1f1f3;
+  --placeholder-color: #9f9f9f;
+  --outgoing-chat-bg: #ffffff;
+  --incoming-chat-bg: #f7f7f8;
+  --outgoing-chat-border: #ffffff;
+  --incoming-chat-border: #d9d9e3; 
+
+  
+}
+
+/* dark Mode */
+.dark-mode {
+  --text-color: #ffffff;
+  --icon-color: #acacbe;
+  --icon-hover-bg: #5b5e71;
+  --placeholder-color: #cccccc;
+  --outgoing-chat-bg: #343541;
+  --incoming-chat-bg: #444654;
+  --outgoing-chat-border: #343541;
+  --incoming-chat-border: #444654; 
+}
+
+
+p,a,li{
+  font-size: 14px;
+}
+
+body{
+  overflow: hidden;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  display: block;
+  width: 32px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side,var(--text-color) 90%,#0000) 0/calc(100%/3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1s steps(4) infinite;
+}
+@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+      
